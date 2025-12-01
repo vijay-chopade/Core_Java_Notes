@@ -1,74 +1,25 @@
 
 ========================================
-2025-12-01 → Java Introduction
+2025-12-01 → Method Overriding
 ----------------------------------------
-Here are short notes on Java Introduction for interview preparation:
+Method Overriding
 
-1 Java is a high-level object-oriented programming language developed by Sun Microsystems now Oracle. It was first released in 1995.
+Method Overriding is a feature that allows a subclass to provide a specific implementation for a method that is already defined in its superclass. It is a core concept of runtime polymorphism in Java.
 
-2 Key features of Java include:
-    1 Object-Oriented Everything in Java is an object or revolves around objects.
-    2 Platform Independent Code compiled once can run on any platform with a Java Virtual Machine JVM. This is known as Write Once Run Anywhere WORA.
-    3 Simple It avoids complex features like explicit pointers and operator overloading.
-    4 Secure Java uses a security manager for secure execution of untrusted code.
-    5 Robust Strong memory management automatic garbage collection and exception handling make it robust.
-    6 Multithreaded Supports concurrent execution of multiple parts of a program.
-    7 High Performance Achieved through the use of Just-In-Time JIT compilers.
+Key points for interview preparation:
 
-3 Java Platform Components:
-    1 Java Virtual Machine JVM An abstract machine that provides a runtime environment for executing Java bytecode.
-    2 Java Runtime Environment JRE Consists of the JVM plus Java core classes and supporting files. It is used to run Java applications.
-    3 Java Development Kit JDK Includes the JRE plus development tools such as the compiler javac and debugger. It is used to develop Java applications.
-
-4 How Java Code Executes:
-    1 Java source code a .java file is written by the developer.
-    2 The `javac` compiler translates the source code into bytecode a .class file.
-    3 The bytecode is then executed by the JVM which interprets or JIT compiles it into machine-specific instructions for the underlying hardware.
-
-5 Applications of Java:
-    1 Android Applications Mobile apps are primarily developed using Java.
-    2 Web Applications Technologies like Servlets JSP Spring and Hibernate are used for web development.
-    3 Enterprise Applications Large-scale business applications in finance banking and e-commerce.
-    4 Desktop Applications Using frameworks like Swing and JavaFX.
-    5 Big Data Technologies Hadoop Spark and Kafka extensively use Java.
-    6 Scientific Applications Used for numerical computations and simulations.
-========================================
-
-========================================
-2025-12-01 → Features of Java
-----------------------------------------
-Java is widely recognized for its strong set of features that contribute to its popularity and versatility in software development. Here are some of its core features:
-
-1 Simple
-Java is designed to be easy to learn and use. It simplifies programming by removing complex features like explicit pointers operator overloading and multiple inheritance from C++.
-
-2 Object-Oriented
-Java is a pure object-oriented programming language. It adheres to the principles of Encapsulation Inheritance Polymorphism and Abstraction enabling modular reusable and maintainable code.
-
-3 Platform Independent
-This is a key feature often referred to as Write Once Run Anywhere WORA. Java source code is compiled into an intermediate bytecode which can then be executed on any system that has a Java Virtual Machine JVM installed regardless of the underlying operating system or hardware.
-
-4 Secure
-Java offers a robust security architecture. Features like the bytecode verifier security manager and the absence of explicit pointers help prevent unauthorized access and protect against malicious code.
-
-5 Robust
-Java is known for its reliability. It achieves robustness through strong memory management automatic garbage collection for memory deallocation exception handling to manage runtime errors and strong type checking.
-
-6 Multithreaded
-Java supports multithreading allowing multiple parts of a program to execute concurrently. This improves the performance and responsiveness of applications by efficiently utilizing CPU resources.
-
-7 Portable
-Java bytecode can be executed on any platform with a JVM. Furthermore Java defines fixed sizes for its primitive data types ensuring that applications behave consistently across different operating systems.
-
-8 High Performance
-While initially interpreted Java uses a Just-In-Time JIT compiler that converts bytecode into native machine code at runtime. This dynamic compilation significantly boosts the execution speed of Java applications.
-
-9 Distributed
-Java is designed to facilitate distributed computing. Its networking capabilities enable the creation of applications that can run across multiple computers on a network allowing for the development of distributed systems.
-
-10 Dynamic
-Java is a dynamic language that can adapt to evolving environments. It supports dynamic class loading and reflection allowing applications to discover and incorporate new types of objects or modules at runtime.
-
-11 Automatic Memory Management
-Java automatically handles memory allocation and deallocation through its garbage collector. Developers are freed from manual memory management tasks which helps prevent memory leaks and other memory-related errors.
+1.  Definition: A subclass defines a method with the same name, same parameters (signature), and same return type (or a covariant return type) as a method in its superclass.
+2.  Inheritance Requirement: Overriding can only occur in a class that inherits from another class. There must be an "is-a" relationship.
+3.  Method Signature: The overridden method in the subclass must have the exact same method name and parameter list as the method in the superclass.
+4.  Return Type: The return type must be the same as the superclass method, or it can be a covariant return type (a subtype of the return type declared in the superclass method).
+5.  Access Modifier: The access modifier of the overriding method cannot be more restrictive than the overridden method. For example, if a superclass method is protected, the subclass method can be protected or public, but not private or default.
+6.  Exceptions: The overriding method cannot throw new or broader checked exceptions than the overridden method. It can throw narrower checked exceptions or no checked exceptions.
+7.  Cannot Override:
+    *   Static methods: Static methods cannot be overridden; they are hidden (method hiding).
+    *   Final methods: Methods declared as final cannot be overridden.
+    *   Private methods: Private methods are not accessible to subclasses, so they cannot be overridden.
+8.  Abstract methods: If a superclass has an abstract method, its first concrete (non-abstract) subclass must provide an implementation for that method, effectively overriding it.
+9.  Runtime Polymorphism: Method overriding is the mechanism for achieving runtime polymorphism (also known as dynamic method dispatch). The actual method called is determined at runtime based on the actual type of the object, not the reference type.
+10. @Override Annotation: It is good practice to use the @Override annotation above the overriding method. This helps the compiler check if the method is indeed overriding a superclass method and makes the code more readable.
+11. super keyword: The super keyword can be used within the overriding method to call the superclass's version of the method.
 ========================================
