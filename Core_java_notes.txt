@@ -1,25 +1,38 @@
 
 ========================================
-2025-12-01 → Method Overriding
+2025-12-01 → Java Introduction
 ----------------------------------------
-Method Overriding
+Java Introduction Notes for Interview Preparation
 
-Method Overriding is a feature that allows a subclass to provide a specific implementation for a method that is already defined in its superclass. It is a core concept of runtime polymorphism in Java.
+1.  What is Java
+    Java is a high level object oriented platform independent programming language developed by Sun Microsystems now owned by Oracle. It is known for its Write Once Run Anywhere capability. It is widely used for enterprise level applications mobile development especially Android web applications and big data technologies.
 
-Key points for interview preparation:
+2.  History of Java
+    Java was initially started by James Gosling and his team in 1991 as part of the Green Project. It was originally named Oak. It was later renamed Java in 1995.
 
-1.  Definition: A subclass defines a method with the same name, same parameters (signature), and same return type (or a covariant return type) as a method in its superclass.
-2.  Inheritance Requirement: Overriding can only occur in a class that inherits from another class. There must be an "is-a" relationship.
-3.  Method Signature: The overridden method in the subclass must have the exact same method name and parameter list as the method in the superclass.
-4.  Return Type: The return type must be the same as the superclass method, or it can be a covariant return type (a subtype of the return type declared in the superclass method).
-5.  Access Modifier: The access modifier of the overriding method cannot be more restrictive than the overridden method. For example, if a superclass method is protected, the subclass method can be protected or public, but not private or default.
-6.  Exceptions: The overriding method cannot throw new or broader checked exceptions than the overridden method. It can throw narrower checked exceptions or no checked exceptions.
-7.  Cannot Override:
-    *   Static methods: Static methods cannot be overridden; they are hidden (method hiding).
-    *   Final methods: Methods declared as final cannot be overridden.
-    *   Private methods: Private methods are not accessible to subclasses, so they cannot be overridden.
-8.  Abstract methods: If a superclass has an abstract method, its first concrete (non-abstract) subclass must provide an implementation for that method, effectively overriding it.
-9.  Runtime Polymorphism: Method overriding is the mechanism for achieving runtime polymorphism (also known as dynamic method dispatch). The actual method called is determined at runtime based on the actual type of the object, not the reference type.
-10. @Override Annotation: It is good practice to use the @Override annotation above the overriding method. This helps the compiler check if the method is indeed overriding a superclass method and makes the code more readable.
-11. super keyword: The super keyword can be used within the overriding method to call the superclass's version of the method.
+3.  Key Features or Why Java
+    1.  Platform Independent Code compiled on one OS can run on any other OS with a JVM.
+    2.  Object Oriented Language based on classes and objects supports inheritance polymorphism abstraction and encapsulation.
+    3.  Simple Syntax similar to C plus plus making it easier to learn.
+    4.  Secure Strong security features including a sandbox environment and bytecode verifier.
+    5.  Robust Strong memory management automatic garbage collection and exception handling.
+    6.  Multithreaded Supports concurrent execution of multiple parts of a program.
+    7.  High Performance Achieved through the Just In Time JIT compiler.
+    8.  Distributed Designed for network based applications allowing for distributed computing.
+    9.  Rich API and large community support.
+
+4.  Java Platform Components
+    1.  JVM Java Virtual Machine An abstract machine that enables a computer to run Java programs. It is responsible for converting Java bytecode into machine specific code and executing it. It also manages memory through garbage collection.
+    2.  JRE Java Runtime Environment Contains the JVM and core class libraries. It is what you need to run Java applications. It does not include development tools.
+    3.  JDK Java Development Kit Includes the JRE along with development tools like the compiler javac debugger jdb and archiver jar. It is what you need to develop Java applications.
+
+5.  How Java Works Write Once Run Anywhere
+    1.  Java source code written in a dot java file is compiled by the javac compiler into platform independent bytecode stored in a dot class file.
+    2.  This bytecode can then be executed by any JVM on any operating system.
+    3.  The JVM translates the bytecode into machine specific instructions for the underlying hardware.
+
+6.  Basic Program Structure
+    1.  Every Java program must have at least one class.
+    2.  The entry point for execution of a Java application is the public static void main String[] args method.
+    3.  Code statements typically end with a semicolon.
 ========================================
