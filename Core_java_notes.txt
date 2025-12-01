@@ -36,3 +36,42 @@ Java Introduction Notes for Interview Preparation
     2.  The entry point for execution of a Java application is the public static void main String[] args method.
     3.  Code statements typically end with a semicolon.
 ========================================
+
+========================================
+2025-12-01 → Features of Java
+----------------------------------------
+Here are short notes on the features of Java for interview preparation
+
+1  Simple
+Java is designed to be easy to learn and understand. It removes complex features found in other languages like explicit pointers operator overloading and multiple inheritance. This simplicity makes development faster and reduces errors.
+
+2  Object-Oriented
+Java fully embraces the object-oriented programming paradigm. Everything in Java except primitive types is an object. It supports core OOP concepts such as encapsulation inheritance polymorphism and abstraction.
+
+3  Platform Independent
+This is a key feature often described as Write Once Run Anywhere WORA. Java source code is compiled into bytecode which can then be executed on any platform that has a Java Virtual Machine JVM without modification.
+
+4  Secure
+Java is designed with security in mind. It provides a secure environment for running applications by using a security manager bytecode verifier and by eliminating explicit pointers to prevent unauthorized memory access.
+
+5  Robust
+Java is a robust language designed for reliability. It features strong memory management automatic garbage collection for memory cleanup and powerful exception handling mechanisms to prevent common programming errors and crashes.
+
+6  Multithreaded
+Java supports multithreading allowing multiple parts of a program to execute concurrently. This feature helps in building highly responsive and efficient applications by improving performance and resource utilization.
+
+7  High Performance
+Java achieves high performance through the use of Just-In-Time JIT compilers. The JIT compiler converts Java bytecode into native machine code at runtime which can then be executed at high speed.
+
+8  Distributed
+Java is designed for creating distributed applications. It has extensive networking capabilities and provides tools like Remote Method Invocation RMI which allows objects to communicate with each other across a network.
+
+9  Dynamic
+Java is a dynamic language meaning it can adapt to an evolving environment. It supports dynamic loading of classes allowing code to be updated on the fly without needing to recompile the entire application.
+
+10 Portable
+Due to its platform independence Java bytecode can be carried to any platform and executed without any modifications. This makes Java code highly portable across different operating systems and hardware.
+
+11 Interpreted
+While Java code is first compiled into bytecode this bytecode is then interpreted by the JVM at runtime. This interpretation step combined with JIT compilation contributes to its portability and helps with debugging.
+========================================
