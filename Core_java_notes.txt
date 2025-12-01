@@ -1,0 +1,42 @@
+
+========================================
+2025-12-01 → Java Introduction
+----------------------------------------
+Java Introduction Interview Notes
+
+1 What is Java
+Java is a high-level object-oriented platform-independent programming language. It was developed by James Gosling at Sun Microsystems now Oracle. Java is known for its robustness security and scalability in application development.
+
+2 Key Features of Java
+Object-Oriented Based on objects and classes supporting encapsulation inheritance polymorphism and abstraction.
+Platform Independent Write Once Run Anywhere WORA achieved through the Java Virtual Machine JVM.
+Simple Designed with a clean syntax avoiding complex features like explicit pointers.
+Secure Provides built-in security features bytecode verification and absence of explicit pointers.
+Robust Strong memory management automatic garbage collection and comprehensive exception handling.
+Multithreaded Supports concurrent execution of multiple parts of a program.
+High Performance Achieved through Just-In-Time JIT compilers that optimize bytecode execution.
+Distributed Designed for network-centric computing.
+
+3 JVM JRE JDK Explained
+JVM Java Virtual Machine An abstract machine that provides a runtime environment to execute Java bytecode. It is the component responsible for Java's platform independence.
+JRE Java Runtime Environment Consists of the JVM and Java class libraries. It is necessary to run Java applications.
+JDK Java Development Kit The complete development kit for Java. It includes the JRE a compiler javac debugger and other development tools needed to develop Java applications.
+
+4 How Java achieves Platform Independence WORA
+Java source code stored in a .java file is first compiled into platform-independent bytecode stored in a .class file by the javac compiler.
+This bytecode is then interpreted and executed by the platform-specific JVM on the target operating system.
+Since the bytecode is independent of the underlying hardware or operating system Java programs can run on any device with a compatible JVM without needing to be recompiled.
+
+5 Basic Java Program Compilation and Execution Flow
+1 Write your Java source code in a .java file for example MyProgram.java.
+2 Compile the source code using the JDK's javac compiler: javac MyProgram.java. This generates a bytecode file MyProgram.class.
+3 Execute the compiled bytecode using the java launcher: java MyProgram. The JVM loads and executes the bytecode.
+
+6 Common Applications of Java
+Android Applications for mobile devices.
+Web Applications using frameworks like Spring and Servlets.
+Enterprise Applications for large-scale business solutions.
+Desktop Applications using AWT Swing or JavaFX.
+Big Data Technologies like Hadoop and Spark.
+Scientific Applications and research tools.
+========================================
