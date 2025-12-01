@@ -33,3 +33,42 @@ Here are short notes on Java Introduction for interview preparation:
     5 Big Data Technologies Hadoop Spark and Kafka extensively use Java.
     6 Scientific Applications Used for numerical computations and simulations.
 ========================================
+
+========================================
+2025-12-01 → Features of Java
+----------------------------------------
+Java is widely recognized for its strong set of features that contribute to its popularity and versatility in software development. Here are some of its core features:
+
+1 Simple
+Java is designed to be easy to learn and use. It simplifies programming by removing complex features like explicit pointers operator overloading and multiple inheritance from C++.
+
+2 Object-Oriented
+Java is a pure object-oriented programming language. It adheres to the principles of Encapsulation Inheritance Polymorphism and Abstraction enabling modular reusable and maintainable code.
+
+3 Platform Independent
+This is a key feature often referred to as Write Once Run Anywhere WORA. Java source code is compiled into an intermediate bytecode which can then be executed on any system that has a Java Virtual Machine JVM installed regardless of the underlying operating system or hardware.
+
+4 Secure
+Java offers a robust security architecture. Features like the bytecode verifier security manager and the absence of explicit pointers help prevent unauthorized access and protect against malicious code.
+
+5 Robust
+Java is known for its reliability. It achieves robustness through strong memory management automatic garbage collection for memory deallocation exception handling to manage runtime errors and strong type checking.
+
+6 Multithreaded
+Java supports multithreading allowing multiple parts of a program to execute concurrently. This improves the performance and responsiveness of applications by efficiently utilizing CPU resources.
+
+7 Portable
+Java bytecode can be executed on any platform with a JVM. Furthermore Java defines fixed sizes for its primitive data types ensuring that applications behave consistently across different operating systems.
+
+8 High Performance
+While initially interpreted Java uses a Just-In-Time JIT compiler that converts bytecode into native machine code at runtime. This dynamic compilation significantly boosts the execution speed of Java applications.
+
+9 Distributed
+Java is designed to facilitate distributed computing. Its networking capabilities enable the creation of applications that can run across multiple computers on a network allowing for the development of distributed systems.
+
+10 Dynamic
+Java is a dynamic language that can adapt to evolving environments. It supports dynamic class loading and reflection allowing applications to discover and incorporate new types of objects or modules at runtime.
+
+11 Automatic Memory Management
+Java automatically handles memory allocation and deallocation through its garbage collector. Developers are freed from manual memory management tasks which helps prevent memory leaks and other memory-related errors.
+========================================
