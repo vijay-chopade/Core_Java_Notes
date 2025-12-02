@@ -75,3 +75,44 @@ Due to its platform independence Java bytecode can be carried to any platform an
 11 Interpreted
 While Java code is first compiled into bytecode this bytecode is then interpreted by the JVM at runtime. This interpretation step combined with JIT compilation contributes to its portability and helps with debugging.
 ========================================
+
+========================================
+2025-12-02 → JVM, JRE, JDK
+----------------------------------------
+JVM JRE JDK Short Notes for Interview Preparation
+
+JVM
+
+1 JVM stands for Java Virtual Machine.
+2 It is an abstract machine that provides a runtime environment to execute Java bytecode.
+3 The JVM converts Java bytecode into machine specific language.
+4 It is platform dependent. This means a JVM for Windows is different from a JVM for Linux.
+5 Key functions include loading code verifying code executing code and managing memory through garbage collection.
+6 It uses a Just In Time JIT compiler for performance optimization by compiling frequently used bytecode into native machine code.
+
+JRE
+
+1 JRE stands for Java Runtime Environment.
+2 It is an implementation of the JVM.
+3 JRE consists of the JVM plus a set of core libraries and other supporting files needed to run Java applications.
+4 If you only want to run a Java program you need JRE.
+5 JRE does not include development tools like compilers javac or debuggers.
+
+JDK
+
+1 JDK stands for Java Development Kit.
+2 It is a software development environment used for developing Java applications.
+3 JDK includes the JRE and a set of development tools.
+4 If you want to develop and run Java programs you need JDK.
+5 Key development tools included are javac the compiler java the application launcher jar the archiver and javadoc the documentation generator.
+
+Relationship
+
+1 The relationship can be seen as a nested structure.
+2 JDK contains JRE.
+3 JRE contains JVM.
+4 So the hierarchy is JDK contains JRE which contains JVM.
+5 JDK is for both developing and running Java applications.
+6 JRE is solely for running Java applications.
+7 JVM is the core component that executes the bytecode.
+========================================
