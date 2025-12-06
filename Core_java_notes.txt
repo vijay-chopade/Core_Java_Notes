@@ -116,3 +116,29 @@ Relationship
 6 JRE is solely for running Java applications.
 7 JVM is the core component that executes the bytecode.
 ========================================
+
+========================================
+2025-12-06 → Java Installation
+----------------------------------------
+Java Installation Notes for Interview Preparation
+
+1.  Java installation involves setting up the Java Development Kit JDK on your system. This enables you to write, compile, and run Java applications.
+
+2.  Understanding JDK and JRE:
+    *   JDK Java Development Kit: Essential for Java developers. It includes the Java Runtime Environment JRE, a compiler javac, debuggers, and other development tools.
+    *   JRE Java Runtime Environment: Used by end-users to run Java applications. It contains the Java Virtual Machine JVM and core class libraries.
+
+3.  Installation Steps:
+    *   Download JDK: Obtain the correct JDK version for your operating system from official sources like Oracle or OpenJDK distributions.
+    *   Run Installer: Execute the downloaded installer file and follow the guided prompts. The installer will place Java files in a default location, for example C:\Program Files\Java.
+    *   Configure Environment Variables:
+        *   JAVA_HOME: Create a new system environment variable named JAVA_HOME. Set its value to the root directory of your JDK installation, for example C:\Program Files\Java\jdk-17.
+        *   PATH: Append %JAVA_HOME%\bin to your system's PATH environment variable. This enables running Java commands like java and javac from any command prompt location.
+    *   Verify Installation: Open a command prompt or terminal and type `java -version` and `javac -version`. Both commands should display the installed Java version successfully.
+
+4.  Important Commands and Concepts:
+    *   javac: The Java compiler. It converts .java source code files into .class bytecode files.
+    *   java: The Java application launcher. It executes .class bytecode files using the JVM.
+    *   JVM Java Virtual Machine: An abstract machine that provides a runtime environment for executing Java bytecode. It is the core component of the JRE and enables Java's platform independence.
+    *   JAVA_HOME vs PATH: JAVA_HOME explicitly points to the JDK root directory, which is often used by build tools. PATH tells the operating system where to find executable commands like java and javac.
+========================================
