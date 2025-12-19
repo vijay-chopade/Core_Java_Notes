@@ -240,3 +240,46 @@ Here are short notes on Java Syntax suitable for interview preparation.
  The name of the Java source file must exactly match the name of the public class it contains.
  Java is case-sensitive.
 ========================================
+
+========================================
+2025-12-19 → Data Types
+----------------------------------------
+Java Data Types
+
+1 Primitive Data Types
+ These are the basic building blocks in Java. They directly hold the actual values and are stored in the stack memory.
+ Each primitive type has a fixed size in memory.
+ There are 8 primitive data types in Java:
+
+ 1 byte 8-bit signed integer. Range is -128 to 127. Default value 0.
+ 2 short 16-bit signed integer. Range is -32,768 to 32,767. Default value 0.
+ 3 int 32-bit signed integer. Most commonly used for whole numbers. Range is approximately +/- 2 billion. Default value 0.
+ 4 long 64-bit signed integer. For very large whole numbers. Default value 0L.
+ 5 float 32-bit single-precision floating-point number. For decimal numbers. Default value 0.0f.
+ 6 double 64-bit double-precision floating-point number. Most commonly used for decimal numbers. Default value 0.0d.
+ 7 char 16-bit Unicode character. Represents a single character. Default value '\u0000'.
+ 8 boolean Represents true or false. Default value false.
+
+ Primitive types are passed by value.
+
+2 Non-Primitive Data Types Reference Data Types
+ These do not directly hold values. Instead, they hold references memory addresses to objects which are stored in the heap memory.
+ Their size is not fixed and varies depending on the object they refer to.
+ Examples include:
+
+ 1 String A sequence of characters.
+ 2 Arrays Collections of similar types of data.
+ 3 Classes User-defined blueprints for objects.
+ 4 Interfaces Blueprints for classes.
+ 5 Enums Special classes representing a group of constants.
+
+ The default value for non-primitive types is null.
+ Non-primitive types are passed by reference effectively the reference itself is passed by value.
+
+3 Key Differences Between Primitive and Non-Primitive Types
+ 1 Storage Primitive types store actual values. Non-primitive types store references to objects.
+ 2 Memory Primitive types are stored on the stack. Non-primitive objects are stored on the heap.
+ 3 Size Primitive types have fixed sizes. Non-primitive types have variable sizes.
+ 4 Default Value Primitive types have specific default values 0, false, '\u0000'. Non-primitive types default to null.
+ 5 Performance Accessing primitive types is generally faster as values are directly available.
+========================================
