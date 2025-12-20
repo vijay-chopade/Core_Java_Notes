@@ -283,3 +283,53 @@ Java Data Types
  4 Default Value Primitive types have specific default values 0, false, '\u0000'. Non-primitive types default to null.
  5 Performance Accessing primitive types is generally faster as values are directly available.
 ========================================
+
+========================================
+2025-12-20 → Variables
+----------------------------------------
+1 Variables Definition
+A variable is a name given to a memory location. It acts as a container to store data values. Its value can be changed during program execution.
+
+2 Characteristics
+Every variable has a data type, a name, and a value.
+The data type determines the kind of data it can store example integer text and the operations that can be performed.
+The name is used to identify and refer to the variable in the code.
+
+3 Declaration and Initialization
+Declaration involves specifying the variable's data type and name. Example int quantity;
+Initialization is the process of assigning an initial value to a declared variable. Example quantity = 100;
+Declaration and initialization can occur together. Example int quantity = 100;
+
+4 Types of Variables in Java
+Java categorizes variables into three main types based on their declaration location and behavior.
+
+4.1 Instance Variables non static fields
+These are declared inside a class but outside any method constructor or block.
+Each object or instance of the class will have its own copy of these variables.
+They represent the unique state of an object.
+If not explicitly initialized they are assigned default values 0 for numeric types false for boolean null for object references.
+
+4.2 Static Variables class variables
+These are declared inside a class but outside any method constructor or block using the static keyword.
+There is only one copy of a static variable per class shared by all instances of that class.
+They are associated with the class itself rather than any specific object.
+Like instance variables they receive default values if not explicitly initialized.
+
+4.3 Local Variables
+These are declared inside a method constructor or a block of code.
+They are local to that specific block and cannot be accessed from outside it.
+Local variables must be explicitly initialized before they are used. The Java compiler will report an error if an uninitialized local variable is used.
+Their scope and lifetime are limited to the block in which they are declared.
+
+5 Naming Conventions
+Variable names should be descriptive and meaningful.
+They typically follow the camelCase convention where the first letter of the first word is lowercase and the first letter of subsequent words is uppercase example employeeId annualSalary.
+Names must begin with a letter an underscore or a dollar sign. Subsequent characters can include digits.
+
+6 Scope and Lifetime
+Scope defines the region of the program where a variable can be accessed.
+Lifetime refers to how long a variable exists in memory.
+Instance variables have object scope and their lifetime is tied to the object's existence.
+Static variables have class scope and exist as long as the class is loaded in the JVM.
+Local variables have block scope and exist only while their respective block is being executed.
+========================================
