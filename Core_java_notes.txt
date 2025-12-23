@@ -333,3 +333,52 @@ Instance variables have object scope and their lifetime is tied to the object's 
 Static variables have class scope and exist as long as the class is loaded in the JVM.
 Local variables have block scope and exist only while their respective block is being executed.
 ========================================
+
+========================================
+2025-12-23 → Input and Output
+----------------------------------------
+Here are short notes on Java Input and Output suitable for interview preparation:
+
+1 Java I/O is based on streams. A stream represents a sequence of data.
+2 Input streams read data, and output streams write data.
+
+3 Java I/O streams are categorized into two main types:
+    a Byte Streams for raw binary data.
+    b Character Streams for text data.
+
+4 Byte Streams
+    a Abstract classes are InputStream and OutputStream.
+    b Operate on 8-bit bytes.
+    c Used for reading and writing any type of binary data, like images, audio, or compiled classes.
+    d Common concrete classes: FileInputStream, FileOutputStream, BufferedInputStream, BufferedOutputStream, DataInputStream, DataOutputStream, ObjectInputStream, ObjectOutputStream.
+
+5 Character Streams
+    a Abstract classes are Reader and Writer.
+    b Operate on 16-bit Unicode characters.
+    c Automatically handle character encodings, making them suitable for internationalized text.
+    d Common concrete classes: FileReader, FileWriter, BufferedReader, BufferedWriter, InputStreamReader, OutputStreamWriter.
+
+6 Key Stream Types and Their Uses:
+    a File Streams: FileInputStream/FileOutputStream (bytes) and FileReader/FileWriter (characters) to interact with files on the disk.
+    b Buffered Streams: BufferedReader/BufferedWriter and BufferedInputStream/BufferedOutputStream. They improve performance by buffering data, reducing the number of actual I/O operations. They wrap other streams.
+    c Data Streams: DataInputStream/DataOutputStream. Allow reading and writing primitive Java data types (like int, double, boolean) in a portable way.
+    d Object Streams (Serialization): ObjectInputStream/ObjectOutputStream. Used to read and write entire Java objects to/from a stream.
+        i Objects must implement the java.io.Serializable interface to be serialized.
+        ii The transient keyword can be used to mark fields that should not be serialized.
+        iii serialVersionUID is used for version control of serialized objects.
+
+7 Stream Chaining (Decorators):
+    a Streams are often chained or wrapped around each other to add functionality. For example, a BufferedReader can wrap a FileReader to add buffering capabilities to file reading.
+    b Example: new BufferedReader(new FileReader("example.txt"))
+
+8 Closing Streams:
+    a It is crucial to close streams to release system resources.
+    b The preferred way to ensure streams are closed is by using the try-with-resources statement introduced in Java 7. This automatically closes any resource that implements the AutoCloseable interface.
+    c Before Java 7, streams were typically closed in a finally block.
+
+9 NIO.2 (New I/O APIs):
+    a Introduced in Java 7 in the java.nio.file package.
+    b Provides a more modern, flexible, and efficient way to handle file I/O operations.
+    c Key classes include Path for representing file system paths and Files for performing common file operations (copy, move, delete, read/write).
+    d Supports features like asynchronous I/O, file system monitoring, and symbolic links.
+========================================
