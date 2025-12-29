@@ -457,3 +457,48 @@ Switch Statement
 5.  The break keyword is crucial to exit the switch statement after a case is matched and executed. Without break, execution will "fall through" to subsequent case blocks.
 6.  The default keyword is optional and specifies code to be executed if none of the case values match. It behaves similarly to the final else in an if-else-if ladder.
 ========================================
+
+========================================
+2025-12-30 → Loops (For, While, Do-while)
+----------------------------------------
+Here are short notes on Java loops for interview preparation.
+
+Java Loops provide a way to execute a block of code repeatedly as long as a certain condition is met.
+
+1 For Loop
+
+  Used when the number of iterations is known beforehand.
+  Syntax: for (initialization; condition; increment or decrement) { // code to execute }
+  The initialization part executes once at the beginning.
+  The condition is checked before each iteration. If true, the loop body executes.
+  The increment or decrement part executes after each iteration.
+
+1.1 Enhanced For Loop (For-each Loop)
+
+  Introduced in Java 5.
+  Used for iterating over arrays and collections.
+  Provides a simpler way to traverse elements without managing index variables.
+  Syntax: for (DataType element : arrayOrCollection) { // code to execute }
+  It is read-only for elements; you cannot modify the array or collection elements directly using this loop in the same way as a traditional for loop.
+
+2 While Loop
+
+  Used when the number of iterations is not known beforehand and depends on a condition.
+  The loop continues as long as its condition remains true.
+  Syntax: while (condition) { // code to execute }
+  The condition is evaluated before each execution of the loop body.
+  If the condition is initially false, the loop body will not execute even once. This means it can execute zero times.
+
+3 Do-While Loop
+
+  Similar to the while loop, but guarantees that the loop body executes at least once.
+  The condition is evaluated after the execution of the loop body.
+  Syntax: do { // code to execute } while (condition);
+  The loop body executes first, then the condition is checked. If true, the loop repeats.
+  This loop always executes at least one time.
+
+Common Loop Control Statements
+
+  break: Immediately terminates the loop (for, while, do-while) and continues execution at the statement immediately following the loop.
+  continue: Skips the current iteration of the loop and proceeds to the next iteration (if the condition allows).
+========================================
