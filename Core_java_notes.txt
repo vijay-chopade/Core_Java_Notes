@@ -428,3 +428,32 @@ This is the only ternary operator in Java, meaning it takes three operands.
 Syntax: condition ? expression1 : expression2
 Description: It evaluates the 'condition'. If the condition is true, 'expression1' is evaluated and its value is returned. If the condition is false, 'expression2' is evaluated and its value is returned. It provides a concise way to write simple if-else statements.
 ========================================
+
+========================================
+2025-12-29 → If, Else-if, Switch
+----------------------------------------
+If Statement
+1.  Executes a block of code only if a specified boolean condition evaluates to true.
+2.  It is the most basic conditional statement.
+
+If-Else Statement
+1.  Provides two distinct paths of execution.
+2.  If the condition is true, the code in the if block executes.
+3.  If the condition is false, the code in the else block executes.
+4.  Ensures that exactly one of two blocks will always run.
+
+If-Else-If Ladder
+1.  Used to test multiple conditions sequentially.
+2.  Conditions are evaluated from top to bottom.
+3.  The code block corresponding to the first true condition is executed, and the rest of the ladder is skipped.
+4.  An optional final else block can be used to handle cases where none of the preceding if or else-if conditions are met.
+5.  Useful for checking a range of values or multiple distinct conditions where order of evaluation is important.
+
+Switch Statement
+1.  An alternative to a long if-else-if ladder when testing a single variable against multiple discrete values.
+2.  Works with byte, short, char, int, enum, String (from Java 7), and their corresponding wrapper types.
+3.  The value of the switch expression is compared against the values specified in case labels.
+4.  Execution jumps to the matching case label.
+5.  The break keyword is crucial to exit the switch statement after a case is matched and executed. Without break, execution will "fall through" to subsequent case blocks.
+6.  The default keyword is optional and specifies code to be executed if none of the case values match. It behaves similarly to the final else in an if-else-if ladder.
+========================================
