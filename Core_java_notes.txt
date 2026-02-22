@@ -502,3 +502,31 @@ Common Loop Control Statements
   break: Immediately terminates the loop (for, while, do-while) and continues execution at the statement immediately following the loop.
   continue: Skips the current iteration of the loop and proceeds to the next iteration (if the condition allows).
 ========================================
+
+========================================
+2026-02-22 → Break and Continue
+----------------------------------------
+Here are notes on Break and Continue suitable for interview preparation:
+
+Break
+
+1. The `break` statement is used to terminate the enclosing loop (for, while, do-while) or `switch` statement immediately.
+2. When `break` is encountered, program control exits the loop or `switch` and resumes at the statement immediately following the terminated construct.
+3. It is typically used when a specific condition is met within a loop, making further iterations unnecessary or undesirable.
+4. Without a label, `break` only affects the innermost loop or `switch` statement it is part of.
+5. A `labeled break` can be used to exit an outer loop from within an inner loop, by specifying the label of the outer loop.
+
+Continue
+
+1. The `continue` statement is used to skip the rest of the current iteration of the innermost loop (for, while, do-while).
+2. When `continue` is encountered, program control immediately moves to the next iteration of the loop.
+3. For `for` loops, it proceeds to the update expression, then the condition. For `while` and `do-while` loops, it proceeds directly to the loop condition.
+4. It is typically used when a specific condition is met for the current iteration, and the remaining statements within that iteration should be bypassed, but the loop itself should continue with subsequent iterations.
+5. Without a label, `continue` only affects the innermost loop.
+6. A `labeled continue` can be used to skip the current iteration of an outer loop (and proceed to its next iteration) from within an inner loop, by specifying the label of the outer loop.
+
+Key Difference
+
+1. `break` exits the entire loop (or switch statement).
+2. `continue` skips only the current iteration of the loop and proceeds to the next one.
+========================================
