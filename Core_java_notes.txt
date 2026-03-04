@@ -630,3 +630,33 @@ Java Arrays Short Notes for Interview Preparation
         System.out.println();
     }
 ========================================
+
+========================================
+2026-03-04 → Enhanced For Loop
+----------------------------------------
+Enhanced For Loop
+
+1 Also known as For-Each loop.
+2 Introduced in Java 5 to iterate over arrays and collections (objects implementing the Iterable interface).
+3 Syntax: for (Type element : collectionOrArray) { // code using element }
+
+4 Benefits:
+    a Improved readability and simpler syntax compared to traditional for loops or explicit iterators.
+    b Reduces boilerplate code.
+    c Eliminates potential off-by-one errors often associated with manual index management.
+    d Focuses on processing each element rather than managing the iteration mechanism.
+
+5 Limitations:
+    a No index access: You cannot directly get the index of the current element during iteration.
+    b Cannot iterate backwards.
+    c Cannot skip elements or iterate over a subset of elements based on an index.
+    d Cannot modify the collection (add or remove elements) during iteration using the loop construct itself. Attempting to modify the underlying collection directly while iterating will typically result in a ConcurrentModificationException, as it relies on an internal Iterator.
+    e Not suitable for iterating over multiple collections simultaneously.
+
+6 Internal Working (Syntactic Sugar):
+    a For arrays, the compiler converts the enhanced for loop into a traditional for loop with an explicit index.
+    b For collections, the compiler converts the enhanced for loop into a loop that uses an Iterator, specifically calling its hasNext() and next() methods.
+
+7 Use Case:
+    a Best used when you need to process every element of an array or collection sequentially and do not require the element's index.
+========================================
