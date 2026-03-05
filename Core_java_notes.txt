@@ -660,3 +660,29 @@ Enhanced For Loop
 7 Use Case:
     a Best used when you need to process every element of an array or collection sequentially and do not require the element's index.
 ========================================
+
+========================================
+2026-03-05 → Command Line Arguments
+----------------------------------------
+Command Line Arguments in Java
+
+1 Command Line Arguments are values passed to a Java program during its execution from the command line.
+
+2 They allow you to provide input to a program without modifying or recompiling its source code.
+
+3 In Java, command line arguments are received by the main method through its parameter String[] args.
+
+4 The String[] args parameter is an array of String objects. Each element in this array corresponds to one argument passed from the command line.
+
+5 The first argument is stored at args[0], the second at args[1], and so on. The number of arguments can be found using args.length.
+
+6 All command line arguments are treated as strings by Java. If you need to use them as numbers or other data types, you must explicitly parse them.
+
+7 For example, to convert a string argument to an integer, use Integer.parseInt(args[index]). Similarly, Double.parseDouble() for doubles.
+
+8 To run a Java program with arguments: java MyProgram argument1 argument2 "argument with spaces"
+
+9 Arguments containing spaces must be enclosed in double quotes on the command line to be treated as a single argument.
+
+10 If no arguments are provided, the args array will be empty, and args.length will be 0. Accessing args[0] in this case would result in an ArrayIndexOutOfBoundsException.
+========================================
